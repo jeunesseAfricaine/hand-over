@@ -1,0 +1,111 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - query_knowledge_base
+  - bot_challenge
+  - thankyou
+  - affirm
+  - deny
+  - nlu_fallback
+
+entities:
+  - object_type
+  - cuisine
+  - attribute
+  - mention
+  - city
+  - destination
+  - region
+  - attraction
+  - beach
+  - resort
+  - park
+
+slots:
+  object_type:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: object_type
+  mention:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: mention
+  attribute:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: attribute
+  beach:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: beach
+  resort:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: resort
+  city:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: city
+  attraction:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: attraction
+  park:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: park
+  region:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: region
+  cuisine:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: cuisine
+
+
+actions:
+- action_query_knowledge_base
+
+responses:
+  utter_greet:
+  - text: "Hey!"
+  - text: "Hello! How can I help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Goodbye. See you soon."
+
+  utter_ask_rephrase:
+  - text: "Sorry, I'm not sure I understand. Can you rephrase?"
+  - text: "Can you please rephrase? I did not got that."
+
+  utter_iamabot:
+  - text: "I am a virtual help desk, powered by Voyage Companion AI."
+
+
+session_config:
+  session_expiration_time: 60  # value in minutes
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,143 @@
+---
+version: "3.1"
+nlu:
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - how are you
+      - good morning
+      - good evening
+      - hey
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - ciao
+  - intent: thankyou
+    examples: |
+      - thanks
+      - thank you
+      - thanks friend
+  - intent: affirm
+    examples: |
+      - yes
+      - yeah
+      - yep
+  - intent: deny
+    examples: |
+      - nope
+      - no
+      - absolutely not
+  - intent: query_knowledge_base
+    examples: >
+      - What [destinations]{"entity": "object_type", "value": "destination"}
+      can you recommend?
+
+      - List some [cities]{"entity": "object_type", "value": "city"} I should visit.
+
+      - Can you name some [landmarks]{"entity": "object_type", "value": "landmark"} please?
+
+      - Can you show me some [beaches]{"entity": "object_type", "value": "beach"} options?
+
+      - List [European]{"entity": "region"} [cities]{"entity": "object_type", "value": "city"}.
+
+      - Do you have any [mountain]{"entity": "attraction"} [destinations]{"entity": "object_type", "value": "destination"}?
+
+      - Do you know the [weather]{"entity": "attribute", "value": "weather"} of [that place]{"entity": "mention"}?
+
+      - What [activities]{"entity": "attribute"} are available at [destination]{"entity": "mention"}?
+
+      - Do you know what [language]{"entity": "attribute"} the locals speak at [destination]{"entity": "mention"}?
+
+      - Does [Kyoto]{"entity": "destination"} have [temples]{"entity": "attraction"}?
+
+      - What is the [time zone]{"entity": "attribute"} of [Paris]{"entity": "destination"}?
+
+      - What is with [Sydney Opera House]{"entity": "landmark"}?
+
+      - Do you also have any [ski resorts]{"entity": "attraction"} [destinations]{"entity": "object_type", "value": "destination"}?
+
+      - What about any [tropical islands]{"entity": "attraction"} [destinations]{"entity": "object_type", "value": "destination"}?
+
+      - Do you also know some [historic sites]{"entity": "attraction"} [destinations]{"entity": "object_type", "value": "destination"}?
+
+      - Can you tell me the [time zone]{"entity": "attribute"} of [that city]{"entity": "mention"}?
+
+      - What [languages]{"entity": "attribute"} do [they]{"entity": "mention"} speak?
+
+      - What [resorts]{"entity": "object_type", "value": "resort"} can you recommend?
+
+      - Please list some [national parks]{"entity": "object_type", "value": "park"} in [Yellowstone]{"entity": "city"} for me.
+
+      - What [theme parks]{"entity": "object_type", "value": "park"} do you know in [Orlando]{"entity": "city"}?
+
+      - Name some [beach resorts]{"entity": "object_type", "value": "resort"} in [Maldives]{"entity": "city"}.
+
+      - Show me some [historical sites]{"entity": "object_type", "value": "site"}.
+
+      - What are [ski resorts]{"entity": "object_type", "value": "resort"} in [Aspen]{"entity": "city"}?
+
+      - Does the [last]{"entity": "mention", "value": "LAST"} one offer [guided tours]{"entity": "attribute", "value": "guided-tours"}?
+
+      - Does the [second one]{"entity": "mention", "value": "2"} [include breakfast]{"entity": "attribute", "value": "breakfast-included"}?
+
+      - What is the [average temperature]{"entity": "attribute"} of the [second]{"entity": "mention", "value": "2"} destination?
+
+      - Does the [first]{"entity": "mention", "value": "1"} one have [free parking]{"entity": "attribute", "value": "free-parking"}?
+
+      - Does the [third]{"entity": "mention", "value": "3"} one have [accessible facilities]{"entity": "attribute", "value": "accessible-facilities"}?
+
+      - What is the [entry fee]{"entity": "attribute", "value": "entry-fee"} of [Statue of Liberty]{"entity": "landmark"}?
+
+      - Does the [Louvre Museum]{"entity": "landmark"} have [audio guides]{"entity": "attribute", "value": "audio-guides"}?
+  - lookup: destination
+    examples: |
+      - Paris
+      - Kyoto
+      - Sydney Opera House
+      - Yellowstone
+      - Orlando
+      - Maldives
+      - Aspen
+      - Statue of Liberty
+      - Louvre Museum
+  - lookup: city
+    examples: |
+      - Paris
+      - Kyoto
+      - Orlando
+      - Maldives
+      - Aspen
+  - lookup: landmark
+    examples: |
+      - Sydney Opera House
+      - Statue of Liberty
+      - Louvre Museum
+  - lookup: attraction
+    examples: |
+      - Temples
+      - Ski resorts
+      - Historic sites
+  - lookup: beach
+    examples: |
+      - Maldives
+      - Hawaii
+      - Bondi Beach
+      - Diani Beach
+  - lookup: resort
+    examples: |
+      - Bora Bora Resort
+      - Atlantis Resort
+      - Whistler Ski Resort
+  - lookup: park
+    examples: |
+      - Yellowstone National Park
+      - Yosemite National Park
+      - Everglades National Park

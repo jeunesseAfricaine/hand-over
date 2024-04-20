@@ -1,0 +1,144 @@
+{
+    "destination": [
+        {
+            "id": 0,
+            "name": "Paris",
+            "region": "Europe",
+            "weather": "temperate",
+            "attractions": ["Eiffel Tower", "Louvre Museum", "Notre-Dame Cathedral"],
+            "language": "French",
+            "time-zone": "Central European Time",
+            "activities": ["sightseeing", "cuisine tasting", "river cruises"]
+        },
+        {
+            "id": 1,
+            "name": "Kyoto",
+            "region": "Asia",
+            "weather": "temperate",
+            "attractions": ["Kinkaku-ji", "Fushimi Inari Shrine", "Arashiyama Bamboo Grove"],
+            "language": "Japanese",
+            "time-zone": "Japan Standard Time",
+            "activities": ["temple visits", "traditional tea ceremonies", "kimono rental"]
+        },
+        {
+            "id": 2,
+            "name": "Sydney",
+            "region": "Australia",
+            "weather": "subtropical",
+            "attractions": ["Sydney Opera House", "Bondi Beach", "Sydney Harbour Bridge"],
+            "language": "English",
+            "time-zone": "Australian Eastern Standard Time",
+            "activities": ["surfing", "beach relaxation", "harbour cruises"]
+        },
+        {
+            "id": 3,
+            "name": "Yellowstone National Park",
+            "region": "North America",
+            "weather": "continental",
+            "attractions": ["Old Faithful", "Grand Prismatic Spring", "Yellowstone Lake"],
+            "language": "English",
+            "time-zone": "Mountain Time Zone",
+            "activities": ["hiking", "wildlife spotting", "camping"]
+        },
+        {
+            "id": 4,
+            "name": "Maldives",
+            "region": "Indian Ocean",
+            "weather": "tropical",
+            "attractions": ["Biyadhoo Island", "Male Atoll", "Vaadhoo Island"],
+            "language": "Dhivehi",
+            "time-zone": "Maldives Time",
+            "activities": ["snorkeling", "diving", "beach villa stays"]
+        },
+        {
+            "id": 5,
+            "name": "Aspen",
+            "region": "North America",
+            "weather": "continental",
+            "attractions": ["Aspen Mountain", "Maroon Bells", "Independence Pass"],
+            "language": "English",
+            "time-zone": "Mountain Time Zone",
+            "activities": ["skiing", "snowboarding", "hiking"]
+        }
+    ],
+    "city": [
+        {
+            "id": 0,
+            "name": "Paris",
+            "region": "Europe",
+            "country": "France",
+            "population": 2148000,
+            "time-zone": "Central European Time",
+            "average-temperature": 12
+        },
+        {
+            "id": 1,
+            "name": "Kyoto",
+            "region": "Asia",
+            "country": "Japan",
+            "population": 1475000,
+            "time-zone": "Japan Standard Time",
+            "average-temperature": 16
+        },
+        {
+            "id": 2,
+            "name": "Sydney",
+            "region": "Australia",
+            "country": "Australia",
+            "population": 5312000,
+            "time-zone": "Australian Eastern Standard Time",
+            "average-temperature": 20
+        },
+        {
+            "id": 3,
+            "name": "Berlin",
+            "region": "Europe",
+            "country": "Germany",
+            "population": 3769000,
+            "time-zone": "Central European Time",
+            "average-temperature": 9
+        },
+        {
+            "id": 4,
+            "name": "Frankfurt am Main",
+            "region": "Europe",
+            "country": "Germany",
+            "population": 763000,
+            "time-zone": "Central European Time",
+            "average-temperature": 8
+        },
+        {
+            "id": 5,
+            "name": "Male",
+            "region": "Indian Ocean",
+            "country": "Maldives",
+            "population": 133000,
+            "time-zone": "Maldives Time",
+            "average-temperature": 28
+        },
+        {
+            "id": 6,
+            "name": "Aspen",
+            "region": "North America",
+            "country": "United States",
+            "population": 6970,
+            "time-zone": "Mountain Time Zone",
+            "average-temperature": 6
+        }
+    ],
+    "landmark": [
+        {
+            "id": 0,
+            "name": "Eiffel Tower",
+            "city": "Paris",
+            "country": "France",
+            "type": "Tower",
+            "height": 330
+        },
+        {
+            "id": 1,
+            "name": "Sydney Opera House",
+            "city": "Sydney",
+            "country": "Australia",
+            "type": "Performing arts center",
+            "height
