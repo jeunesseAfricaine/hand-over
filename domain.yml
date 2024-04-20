@@ -105,7 +105,11 @@ responses:
   utter_iamabot:
   - text: "I am a virtual help desk, powered by Voyage Companion AI."
 
-
+  utter_youarewelcome:
+    - text: You're most welcome! Thank you for using Voyage Companion HelpDesk, and feel free to reach out if you need
+        anything else!😊
+    - text: Karibu! Kuwa na wakati mwema!😊
+    - text: Anytime maze! Unaeza nitext in case u need anything else.😊
 session_config:
   session_expiration_time: 60  # value in minutes
   carry_over_slots_to_new_session: true
