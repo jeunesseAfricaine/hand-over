@@ -1,5 +1,5 @@
+---
 version: "3.1"
-
 intents:
   - greet
   - goodbye
@@ -9,7 +9,6 @@ intents:
   - affirm
   - deny
   - nlu_fallback
-
 entities:
   - object_type
   - cuisine
@@ -22,94 +21,93 @@ entities:
   - beach
   - resort
   - park
-
 slots:
   object_type:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: object_type
+      - type: from_entity
+        entity: object_type
   mention:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: mention
+      - type: from_entity
+        entity: mention
   attribute:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: attribute
+      - type: from_entity
+        entity: attribute
   beach:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: beach
+      - type: from_entity
+        entity: beach
   resort:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: resort
+      - type: from_entity
+        entity: resort
   city:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: city
+      - type: from_entity
+        entity: city
   attraction:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: attraction
+      - type: from_entity
+        entity: attraction
   park:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: park
+      - type: from_entity
+        entity: park
   region:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: region
+      - type: from_entity
+        entity: region
   cuisine:
     type: text
     influence_conversation: false
     mappings:
-    - type: from_entity
-      entity: cuisine
-
-
+      - type: from_entity
+        entity: cuisine
 actions:
-- action_query_knowledge_base
-
+  - action_query_knowledge_base
 responses:
   utter_greet:
-  - text: "Hey!"
-  - text: "Hello! How can I help you?"
-
+    - text: Hey!
+    - text: Hello! How can I help you?
   utter_goodbye:
-  - text: "Bye"
-  - text: "Goodbye. See you soon."
-
+    - text: Bye
+    - text: Goodbye. See you soon.
   utter_ask_rephrase:
-  - text: "Sorry, I'm not sure I understand. Can you rephrase?"
-  - text: "Can you please rephrase? I did not got that."
-
+    - text: Sorry, I'm not sure I understand. Can you rephrase?
+    - text: Can you please rephrase? I did not got that.
   utter_iamabot:
-  - text: "I am a virtual help desk, powered by Voyage Companion AI."
-
+    - text: I am a virtual help desk, powered by Voyage Companion AI.
+  utter_default:
+    - text: Oops! It seems we've taken a detour!. No worries, we're working hard to
+        bring you personalized and seamless experiences. Feel free to ask about
+        destinations or choose to restart the conversation.
+      buttons:
+        - title: Let's Dive In Again! 🌊
+          payload: /restart
   utter_youarewelcome:
-    - text: You're most welcome! Thank you for using Voyage Companion HelpDesk, and feel free to reach out if you need
-        anything else!😊
+    - text: You're most welcome! Thank you for using Voyage Companion HelpDesk, and
+        feel free to reach out if you need anything else!😊
     - text: Karibu! Kuwa na wakati mwema!😊
     - text: Anytime maze! Unaeza nitext in case u need anything else.😊
 session_config:
-  session_expiration_time: 60  # value in minutes
+  session_expiration_time: 60
   carry_over_slots_to_new_session: true
